@@ -120,3 +120,17 @@ nnoremap <silent> <F12> :A<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <F3> :Grep<CR>
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => pep8
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pep8_map='<leader>8'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => superTab
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
