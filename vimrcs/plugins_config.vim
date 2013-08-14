@@ -128,3 +128,20 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => tasklist 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>td <Plug>TaskList
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => gundo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>g :GundoToggle<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => syntastic
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_python_checkers=['flake8']
