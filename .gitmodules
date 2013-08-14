@@ -4,6 +4,3 @@
 [submodule "sources_forked/pydoc"]
 	path = sources_forked/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
-[submodule "sources_forked/pep8"]
-	path = sources_forked/pep8
-	url = https://github.com/vim-scripts/pep8.git
