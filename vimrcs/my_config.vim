@@ -1,4 +1,3 @@
-
 "Get out of VI's compatible mode..
 set nocompatible
 
@@ -6,4 +5,7 @@ set nocompatible
 set list
 set listchars=tab:>-,trail:-
 
- 
+" paste toggle
+set pastetoggle=<F11>
+
+
