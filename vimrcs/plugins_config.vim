@@ -145,3 +145,5 @@ map <leader>g :GundoToggle<CR>
 " => syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers=['flake8', 'pylint']
+let g:syntastic_php_checkers=['php']
+
