@@ -67,7 +67,8 @@ snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn .git generated'
+let Grep_Skip_Files = '*~ cscope.out'
 set grepprg=/bin/grep\ -nH
 
 
