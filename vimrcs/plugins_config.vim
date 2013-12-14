@@ -37,6 +37,7 @@ if has("win16") || has("win32")
 else
     let g:yankring_history_dir = '~/.vim_runtime/temp_dirs/'
 endif
+nnoremap <silent> <F10> :YRShow<CR>
 
 
 """"""""""""""""""""""""""""""
@@ -147,4 +148,3 @@ map <leader>g :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers=['flake8', 'pylint']
 let g:syntastic_php_checkers=['php']
-
