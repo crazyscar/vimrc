@@ -7,5 +7,3 @@ set listchars=tab:>-,trail:-
 
 " paste toggle
 set pastetoggle=<F11>
-
-
