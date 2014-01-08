@@ -23,13 +23,6 @@ map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
-" => MRU plugin
-""""""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
-
-
-""""""""""""""""""""""""""""""
 " => YankRing
 """"""""""""""""""""""""""""""
 if has("win16") || has("win32")
@@ -124,11 +117,11 @@ nnoremap <silent> <F3> :Grep<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => superTab
+" => SuperTab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest
+"au FileType python set omnifunc=pythoncomplete#Complete
+"let g:SuperTabDefaultCompletionType = "context"
+"set completeopt=menuone,longest
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -146,5 +139,46 @@ map <leader>g :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_php_checkers=['php']
+" let g:syntastic_python_checkers=['flake8']
+"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => python-mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pymode = 1
+let g:pymode_trim_whitespaces = 1
+let g:pymode_quickfix_minheight = 3
+let g:pymode_quickfix_maxheight = 6
+let g:pymode_indent = 1
+let g:pymode_folding = 1
+let g:pymode_motion = 1
+"let g:pymode_doc = 1
+"let g:pymode_doc_bind = 'K'
+"let g:pymode_run = 1
+"let g:pymode_run_bind = '<leader>r'
+" => Code Check
+let g:pymode_lint = 1
+let g:pymode_lint_on_write = 1
+let g:pymode_lint_message = 1
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+let g:pymode_lint_cwindow = 1
+" => Rope
+let g:pymode_rope = 1
+let g:pymode_rope_lookup_project = 1
+" => Rope Code Completion
+"let g:pymode_rope_completion = 1
+"let g:pymode_rope_complete_on_dot = 1
+" => pymode Syntax
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_highlight_self = g:pymode_syntax_all
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_syntax_string_formatting = g:pymode_syntax_all
+let g:pymode_syntax_string_format = g:pymode_syntax_all
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => jedi-vim 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType python setlocal completeopt-=preview
