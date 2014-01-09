@@ -16,3 +16,6 @@
 [submodule "sources_forked/jedi-vim"]
 	path = sources_forked/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim
+[submodule "sources_forked/vim-virtualenv"]
+	path = sources_forked/vim-virtualenv
+	url = https://github.com/jmcantrell/vim-virtualenv

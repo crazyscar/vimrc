@@ -1,2 +1,3 @@
 tags
 temp_dirs/*
+*.pyc
