@@ -1,4 +1,4 @@
 tags
 temp_dirs/*
 *.pyc
-*/.netrwhist
+*.netrwhist
