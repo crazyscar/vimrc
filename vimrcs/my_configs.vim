@@ -4,7 +4,3 @@ set nocompatible
 "show list
 set list
 set listchars=tab:>-,trail:-
-
-" paste toggle
-set pastetoggle=<F11>
-

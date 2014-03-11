@@ -141,6 +141,10 @@ map <leader>g :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " let g:syntastic_python_checkers=['flake8']
 "
+let g:syntastic_mode_map = { 'mode': 'active',
+                             \ 'active_filetypes': ['ruby', 'php'],
+                             \ 'passive_filetypes': ['java'] }
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => python-mode
