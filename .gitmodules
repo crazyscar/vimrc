@@ -10,9 +10,6 @@
 [submodule "sources_forked/gundo"]
 	path = sources_forked/gundo
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "sources_forked/python-mode"]
-	path = sources_forked/python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "sources_forked/jedi-vim"]
 	path = sources_forked/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim
