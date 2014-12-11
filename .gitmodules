@@ -16,3 +16,6 @@
 [submodule "sources_forked/jedi-vim"]
 	path = sources_forked/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim
+[submodule "sources_forked/nerdcommenter"]
+	path = sources_forked/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
