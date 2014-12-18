@@ -117,14 +117,6 @@ nnoremap <silent> <F3> :Grep<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => SuperTab
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"au FileType python set omnifunc=pythoncomplete#Complete
-"let g:SuperTabDefaultCompletionType = "context"
-"set completeopt=menuone,longest
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => tasklist 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>td <Plug>TaskList
@@ -146,8 +138,32 @@ let g:syntastic_mode_map = { 'mode': 'active',
                              \ 'passive_filetypes': ['java'] }
 
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => jedi-vim 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType python setlocal completeopt-=preview
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ultisnips
+
+" Track the engine.
+"Plugin '../sources_forked/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+"Plugin '../sources_non_forked/vim-snippets'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => jedi-vim 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+le g:ycm_mlobal_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1

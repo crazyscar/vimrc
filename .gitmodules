@@ -1,6 +1,3 @@
-[submodule "sources_forked/supertab"]
-	path = sources_forked/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "sources_forked/pydoc"]
 	path = sources_forked/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
@@ -13,9 +10,15 @@
 [submodule "sources_forked/vim-virtualenv"]
 	path = sources_forked/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv
-[submodule "sources_forked/jedi-vim"]
-	path = sources_forked/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim
 [submodule "sources_forked/nerdcommenter"]
 	path = sources_forked/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
+[submodule "sources_forked/YouCompleteMe"]
+	path = sources_forked/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "sources_forked/ultisnips"]
+	path = sources_forked/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "sources_forked/vim-snippets"]
+	path = sources_forked/vim-snippets
+	url = https://github.com/honza/vim-snippets
