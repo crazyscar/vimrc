@@ -19,3 +19,6 @@
 [submodule "sources_forked/vim-snippets"]
 	path = sources_forked/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule "sources_forked/vimerl"]
+	path = sources_forked/vimerl
+	url = git@github.com:jimenezrick/vimerl.git
